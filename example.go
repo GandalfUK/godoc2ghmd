@@ -86,7 +86,6 @@ func (p *myPres) exampleMDFunc(info *godoc.PageInfo, funcName, indent string) st
 			code = strings.Replace(code, "\n    ", "\n", -1)
 		}
 		code = strings.Trim(code, "\n")
-		code = strings.Replace(code, "\n", "\n\t", -1)
 
 		buf.WriteString(indent)
 		buf.WriteString("Example:\n\n")
